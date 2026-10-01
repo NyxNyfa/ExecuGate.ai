@@ -1,0 +1,76 @@
+[
+  {
+    "id": "T01-golden-path",
+    "instruction": "Besok pagi deploy payment service ya, sekalian update SOP reconciliation, Mas Budi yang infra, deadline Kamis.",
+    "expect": [
+      { "titleIncludes": ["deploy", "payment"], "division": "technical", "assignee": "Budi Santoso" },
+      { "titleIncludes": ["sop", "reconciliation"], "division": "operational" }
+    ]
+  },
+  {
+    "id": "T02-urgent-bug",
+    "instruction": "Tolong urgent patch bug refund di payment service, deadline besok.",
+    "expect": [
+      { "titleIncludes": ["refund"], "division": "technical", "priority": "P0", "dueWithinDays": 2 }
+    ]
+  },
+  {
+    "id": "T03-two-tasks",
+    "instruction": "Buatkan laporan keuangan bulan ini dan review pipeline docker",
+    "expect": [
+      { "titleIncludes": ["laporan", "keuangan"], "division": "operational" },
+      { "titleIncludes": ["docker"], "division": "technical" }
+    ]
+  },
+  {
+    "id": "T04-ops-only",
+    "instruction": "Sari tolong cek stok gudang besok",
+    "expect": [
+      { "titleIncludes": ["stok", "gudang"], "division": "operational", "assignee": "Sari Wijaya" }
+    ]
+  },
+  {
+    "id": "T05-tech-only-named",
+    "instruction": "Rina, tolong perbarui pipeline CI/CD minggu depan",
+    "expect": [
+      { "titleIncludes": ["pipeline"], "division": "technical", "assignee": "Rina Kartika", "dueWithinDays": 9 }
+    ]
+  },
+  {
+    "id": "T06-reconciliation",
+    "instruction": "Lakukan rekonsiliasi settlement bank hari ini, deadline hari ini",
+    "expect": [
+      { "titleIncludes": ["rekonsiliasi"], "division": "operational", "dueWithinDays": 1 }
+    ]
+  },
+  {
+    "id": "T07-api-endpoint",
+    "instruction": "Tambahkan endpoint baru di core-gateway untuk cek status pembayaran",
+    "expect": [
+      { "titleIncludes": ["endpoint"], "division": "technical" }
+    ]
+  },
+  {
+    "id": "T08-two-ops",
+    "instruction": "Arsipkan formulir kepatuhan, sekalian entri data logistik",
+    "expect": [
+      { "titleIncludes": ["formulir", "kepatuhan"], "division": "operational" },
+      { "titleIncludes": ["entri", "logistik"], "division": "operational" }
+    ]
+  },
+  {
+    "id": "T09-refactor",
+    "instruction": "Refactor modul refund biar lebih rapi, deadline kamis",
+    "expect": [
+      { "titleIncludes": ["refund"], "division": "technical" }
+    ]
+  },
+  {
+    "id": "T10-two-divisions",
+    "instruction": "Deploy payment service besok, sekalian update SOP rekonsiliasi, Mas Budi yang infra",
+    "expect": [
+      { "titleIncludes": ["deploy"], "division": "technical", "assignee": "Budi Santoso" },
+      { "titleIncludes": ["sop"], "division": "operational" }
+    ]
+  }
+]

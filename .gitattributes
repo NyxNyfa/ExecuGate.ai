@@ -1,0 +1,20 @@
+# Normalise line endings in the repository itself.
+#
+# Windows Git defaults to `core.autocrlf=true`, which rewrites LF to CRLF on checkout.
+# The deploy target is Linux, so the committed blobs must be LF or every file shows as
+# modified when it is pulled on a server.
+* text=auto eol=lf
+
+# Files that must never be touched.
+*.png binary
+*.jpg binary
+*.mp3 binary
+*.mp4 binary
+*.ogg binary
+*.wav binary
+*.db binary
+*.db-wal binary
+*.db-shm binary
+
+# Lockfiles and generated output: never resolve merge conflicts in these by hand.
+package-lock.json -diff linguist-generated=true

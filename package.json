@@ -1,0 +1,64 @@
+{
+  "name": "execugate",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ExecuGate.ai - Conversational Agentic Workflow middleware with institutional project memory and an automated quality-gatekeeper",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "setup": "npm install && npm run db:migrate && npm run seed",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "seed": "tsx scripts/seed.ts",
+    "build": "tsx scripts/build.ts",
+    "build:web": "npm --workspace @execugate/web run build",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "dev": "tsx scripts/dev.ts",
+    "dev:api": "tsx apps/api/src/main.ts",
+    "dev:bot": "tsx apps/bot/src/main.ts",
+    "dev:worker": "tsx apps/worker/src/main.ts",
+    "dev:web": "npm --workspace @execugate/web run dev",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:integration": "vitest run --dir tests/integration",
+    "test:tenancy": "vitest run tests/integration/tenancy.test.ts",
+    "test:security": "vitest run tests/integration/security.test.ts",
+    "verify": "npm run typecheck && npm test && npm run eval:tickets && npm run eval:gate",
+    "smoke": "tsx scripts/smoke.ts",
+    "stress": "tsx scripts/stress.ts",
+    "stress:light": "tsx scripts/stress.ts --concurrency=16 --iterations=64",
+    "stress:heavy": "tsx scripts/stress.ts --concurrency=64 --iterations=400",
+    "eval:tickets": "tsx scripts/eval-tickets.ts",
+    "eval:asr": "tsx scripts/eval-asr.ts",
+    "eval:gate": "tsx scripts/eval-gate.ts",
+    "eval:latency": "tsx scripts/eval-latency.ts",
+    "demo": "tsx scripts/demo.ts",
+    "demo:failure": "tsx scripts/demo.ts ci-failure",
+    "demo:outage": "tsx scripts/demo.ts github-outage",
+    "demo:pass": "tsx scripts/demo.ts clean-pass",
+    "backup": "tsx scripts/backup.ts",
+    "restore": "tsx scripts/backup.ts",
+    "provision:secret": "tsx scripts/provision-secret.ts",
+    "bind:staff": "tsx scripts/bind-staff.ts",
+    "check:telegram": "tsx scripts/telegram-check.ts",
+    "check:config": "tsx scripts/check-config.ts",
+    "check:gpu": "tsx scripts/gpu-check.ts",
+    "bench:gpu": "tsx scripts/gpu-check.ts --bench"
+  },
+  "dependencies": {
+    "fastify": "^5.2.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "esbuild": "0.28.2",
+    "tsx": "^4.19.2",
+    "typescript": "^7.0.2",
+    "vitest": "^3.0.5"
+  }
+}

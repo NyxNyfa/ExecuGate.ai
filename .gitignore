@@ -1,0 +1,24 @@
+node_modules/
+dist/
+data/
+.secrets/
+artifacts/
+.env
+.env.local
+*.log
+.DS_Store
+apps/web/dist/
+coverage/
+.tmp/
+
+# Database snapshots written by `npm run backup`. They contain the full audit trail
+# and, in a real deployment, encrypted secrets.
+backups/
+*.replaced-*
+
+# Evaluation audio samples are recorded locally and are not committed;
+# fixtures/eval/asr-cases.json references them by filename.
+fixtures/eval/audio/
+
+# One-off local debug scripts.
+scripts/_*.ts

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "A01-golden-voice",
+    "audio": "a01-golden.mp3",
+    "durationSec": 25,
+    "reference": "besok pagi deploy payment service ya sekalian update sop reconciliation mas budi yang infra deadline kamis",
+    "transcript": "Besok pagi deploy payment service ya, sekalian update SOP reconciliation, Mas Budi yang infra, deadline Kamis."
+  },
+  {
+    "id": "A02-code-switched",
+    "audio": "a02-switch.mp3",
+    "durationSec": 30,
+    "reference": "tolong urgent patch bug refund di payment service deadline besok",
+    "transcript": "Tolong urgent patch bug refund di payment service, deadline besok."
+  },
+  {
+    "id": "A03-ops-instruction",
+    "audio": "a03-ops.mp3",
+    "durationSec": 22,
+    "reference": "sari tolong cek stok gudang besok sekalian buat laporan keuangan",
+    "transcript": "Sari, tolong cek stok gudang besok, sekalian buat laporan keuangan."
+  },
+  {
+    "id": "A04-walkthrough",
+    "audio": "a04-report.mp3",
+    "durationSec": 15,
+    "reference": "tampilkan progres hari ini dong",
+    "transcript": "Tampilkan progres hari ini dong."
+  },
+  {
+    "id": "A05-clarification",
+    "audio": "a05-question.mp3",
+    "durationSec": 18,
+    "reference": "berapa batasan kapasitas payload untuk modul ini",
+    "transcript": "Berapa batasan kapasitas payload untuk modul ini?"
+  },
+  {
+    "id": "A06-long-30s",
+    "audio": "a06-long.mp3",
+    "durationSec": 30,
+    "reference": "hari ini kita perlu tuntaskan deployment payment service dan pembaruan sop rekonsiliasi sebelum jam lima sore",
+    "transcript": "Hari ini kita perlu tuntaskan deployment payment service dan pembaruan SOP rekonsiliasi sebelum jam lima sore."
+  },
+  {
+    "id": "A07-english-mixed",
+    "audio": "a07-english.mp3",
+    "durationSec": 20,
+    "reference": "merge pull requestnya dulu ya terus tunggu sampai ci green semua baru merge ke main",
+    "transcript": "Merge pull requestnya dulu ya, terus tunggu sampai CI green semua baru merge ke main."
+  },
+  {
+    "id": "A08-casual-filler",
+    "audio": "a08-filler.mp3",
+    "durationSec": 24,
+    "reference": "oh iya lupa minta update dokumen arsitekturnya ya dokumen yang versi terbaru",
+    "transcript": "Oh iya, lupa minta update dokumen arsitekturnya ya, dokumen yang versi terbaru."
+  }
+]

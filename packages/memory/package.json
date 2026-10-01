@@ -1,0 +1,13 @@
+{
+  "name": "@execugate/memory",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": { ".": "./src/index.ts", "./*": "./src/*.ts" },
+  "dependencies": {
+    "@execugate/core": "0.1.0",
+    "@execugate/db": "0.1.0",
+    "@execugate/observability": "0.1.0"
+  }
+}
